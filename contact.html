@@ -4,17 +4,150 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            display: flex;
+            min-height: 100vh;
+            background-color: #FFEE8C;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 250px;
+            background-color: #B3EBF2;
+            color: black;
+            padding: 30px 20px;
+        }
+
+        .sidebar h2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar ul li {
+            margin: 20px 0;
+        }
+
+        .sidebar ul li a {
+            color: black;
+            text-decoration: none;
+            display: block;
+            padding: 12px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .sidebar ul li a:hover {
+            background-color: #334155;
+            color: white;
+        }
+
+        /* Main Content */
+        .main-content {
+            flex: 1;
+            padding: 50px;
+        }
+
+        .contact-container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 40px;
+            min-height: 400px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+
+        .contact-list {
+            list-style: none;
+            padding-left: 25px;
+            font-size: 1.1rem;
+            line-height: 2;
+        }
+
+        .contact-list li {
+            margin: 10px 0;
+        }
+
+        .contact-list a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-list a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+            }
+
+            .main-content {
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <h1>Contact me!</h1>
-  <p>
-    <ul>
-      <li>Email: aalyssaturnerr@gmail.com</li>
-      <li>Phone: (609) 464-4179 </li>
-    </ul>
-  </p>
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+        <h2>My Portfolio</h2>
+
+        <ul>
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <div class="contact-container">
+            <h1>Contact Me</h1>
+
+            <p class="intro">
+                Get in touch with me!
+            </p>
+
+            <ul class="contact-list">
+                <li>Email: <a href="mailto:aalyssaturnerr@gmail.com">aalyssaturnerr@gmail.com</a></li>
+                <li>Phone: <a href="tel:6094644179">(609) 464-4179</a></li>
+             <li>LinkedIn: <a href="https://www.linkedin.com/in/alyssaturner669" target="_blank">linkedin.com/in/alyssaturner669</a></li>
+            </ul>
+        </div>
+
+    </main>
 
 </body>
 </html>
