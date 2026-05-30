@@ -95,6 +95,19 @@
                 padding: 20px;
             }
         }
+        .photo-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* space between images */
+    margin-top: 30px;
+    flex-wrap: wrap; /* makes it responsive on small screens */
+}
+
+.small-photo {
+    width: 150px;
+    height: auto;
+    border-radius: 10px; /* optional: rounded corners */
+}
     </style>
 </head>
 <body>
@@ -132,16 +145,10 @@
                 <li>I grew up a huge sports fan and started playing soccer at 4 years old. I went on to play basketball, football, lacrosse, softball, volleyball, cross country, and track competitvely. My favorite sport I played was always tackle football when I was younger!</li>
                 <li>I love adventures! Some of my recent trips have included Alaska, the Great Smoky Mountains, and the Outer Banks.</li>
             </ul>
-       <div style="text-align:left;">
-    <img src="smokies.jpeg" width="150">
-</div>
-
-<div style="text-align:center;">
-    <img src="football.jpg" width="150">
-</div>
-
-<div style="text-align:right;">
-    <img src="alaska.jpeg" width="150">
+       <div class="photo-row">
+    <img src="smokies.jpeg" alt="Smokies Photo" class="small-photo">
+    <img src="football.jpg" alt="Football Photo" class="small-photo">
+    <img src="alaska.jpeg" alt="Alaska Photo" class="small-photo">
 </div>
     </main>
 
